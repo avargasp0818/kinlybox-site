@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KinlyBox — Monthly Gift Box for Parents & Grandparents Far Away</title>
+<meta name="description" content="A monthly gift box for parents and grandparents far away: curated gifts, snacks, and a personalized letter with your family photo. Shipping included, US only.">
+<link rel="canonical" href="https://kinlybox.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#727325">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KinlyBox">
+<meta property="og:title" content="KinlyBox — Close, even when you're far away.">
+<meta property="og:description" content="A monthly box with a personalized letter and your family photo, for the parents and grandparents who live far away.">
+<meta property="og:url" content="https://kinlybox.com/">
+<meta property="og:image" content="https://kinlybox.com/img/og-image.jpg">
+<meta property="og:image:alt" content="Hands holding a kraft paper gift box tied with twine, with the words We live far away too.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght,SOFT@9..144,400..800,0..100&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{--kraft:#D9C6A0;--moss:#727325;--terra:#993815;--espresso:#2B2420;--coral:#D57856;--burgundy:#7C2A1F;--burgundy-d:#5C1E16;--cream:#F4EDE1;--kraft-2:#E6D8BB}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Karla,system-ui,sans-serif;font-size:18px;line-height:1.6;color:var(--espresso);background:var(--cream);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--terra)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;font-variation-settings:"SOFT" 100;line-height:1.08;letter-spacing:-.015em;color:var(--moss)}
+h1{font-size:clamp(2.8rem,7vw,5rem)}
+h1 em{font-style:normal;color:var(--terra)}
+h2{font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:.5em}
+h3{font-size:1.5rem;margin-bottom:.35em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px;position:relative}
+section{padding:84px 0;position:relative;overflow:hidden}
+.kraft{background:var(--kraft)}
+.sig{font-family:Caveat,cursive;font-weight:700;font-size:1.7rem;color:var(--terra)}
+.btn{display:inline-block;background:var(--burgundy);color:var(--cream);padding:15px 30px;border-radius:8px;font-weight:700;text-decoration:none;transition:background .2s}
+.btn:hover,.btn:focus-visible{background:var(--burgundy-d)}
+.btn.ghost{background:transparent;color:var(--burgundy);border:2px solid var(--burgundy)}
+.btn.ghost:hover{background:var(--burgundy);color:var(--cream)}
+:focus-visible{outline:3px solid var(--moss);outline-offset:3px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+header img{height:42px;width:auto}
+.hero{padding:40px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.hero .sig{line-height:1;margin:0}
+.hero .eyebrow{font-weight:700;color:var(--moss);margin:22px 0 10px;font-size:1.15rem}
+.hero p.lead{font-size:1.2rem;margin-bottom:28px;max-width:32em}
+.hero .note{margin-top:14px;font-size:.95rem;color:var(--moss);font-weight:500}
+.hero .photo{border-radius:6px;box-shadow:0 18px 40px rgba(43,36,32,.22)}
+.leaf{position:absolute;pointer-events:none;opacity:.9;width:360px}
+.steps,.boxes,.plans,.gallery{display:grid;gap:24px}
+.steps{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--cream);border-radius:12px;padding:30px}
+.card.kraft{background:var(--kraft)}
+.step-n{font-family:Fraunces,serif;font-weight:700;font-size:3rem;line-height:1;color:var(--terra)}
+.boxes{grid-template-columns:1fr 1fr;gap:32px;margin-top:36px}
+.box{background:var(--kraft-2);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.box.prem{background:var(--terra);color:var(--cream)}
+.box.prem h3,.box.prem .tag{color:var(--kraft)}
+.box.prem li::before{color:var(--coral)}
+.box img{width:100%;aspect-ratio:16/9.2;object-fit:cover}
+.box .body{padding:30px;display:flex;flex-direction:column;flex:1}
+.box .tag{font-weight:700;color:var(--terra);font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
+.box .price{font-family:Fraunces,serif;font-weight:700;font-size:2.4rem;margin:8px 0 2px}
+.box .per{font-size:.95rem;margin-bottom:16px;opacity:.85}
+.box ul{list-style:none;padding:0;margin-bottom:24px;flex:1}
+.box li{padding:7px 0 7px 28px;position:relative}
+.box li::before{content:"✦";position:absolute;left:0;color:var(--moss)}
+.box.prem .btn{background:var(--kraft);color:var(--terra)}
+.box.prem .btn:hover{background:var(--cream)}
+.plans{grid-template-columns:repeat(4,1fr);margin-top:30px}
+.plan{display:flex;flex-direction:column}
+.plan .dur{font-family:Fraunces,serif;font-weight:700;font-size:2rem;line-height:1.1;color:var(--burgundy);margin:6px 0 12px}
+.plan .acts{display:grid;grid-template-columns:1fr;gap:8px}
+.plan .acts .btn{text-align:center}
+.plan .acts .btn{padding:11px 16px;font-size:.95rem}
+.pricenote{margin-top:30px;font-size:1.05rem;background:var(--kraft-2);border-radius:12px;padding:20px 24px}
+.plan p{flex:1;font-size:.98rem;margin-bottom:18px}
+.plan.flag{outline:3px solid var(--burgundy);position:relative}
+.badge{position:absolute;top:-15px;left:20px;background:var(--burgundy);color:var(--cream);font-size:.82rem;font-weight:700;padding:3px 14px;border-radius:999px}
+.premline{margin-top:26px;font-size:1.05rem}
+.gallery{grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px}
+.story-wrap{display:grid;grid-template-columns:1fr 230px;gap:48px;align-items:center}
+.story-wrap p{margin-bottom:1em;max-width:36em}
+.story-wrap img{mix-blend-mode:multiply}
+details{border-bottom:1.5px solid rgba(43,36,32,.25);padding:18px 0}
+summary{cursor:pointer;font-weight:700;font-size:1.1rem}
+details p{margin-top:10px}
+.final{background:var(--burgundy);text-align:center}
+.final h2{color:#fff}
+.final p{color:#fff}
+.final .btn{background:var(--kraft);color:var(--burgundy)}
+.final .btn:hover{background:var(--cream)}
+footer{background:var(--moss);color:var(--cream);padding:36px 0;text-align:center;font-size:.95rem}
+footer img{height:38px;margin:0 auto 14px}
+footer a{color:var(--cream)}
+footer p+p{margin-top:6px}
+@media(max-width:900px){.plans{grid-template-columns:1fr 1fr}.leaf{width:220px}}
+@media(max-width:820px){.hero .wrap,.story-wrap,.boxes,.steps{grid-template-columns:minmax(0,1fr)}.hero .wrap>*,.story-wrap>*{min-width:0}.story-wrap img{max-width:170px}.gallery{grid-template-columns:1fr 1fr}section{padding:56px 0}.hero{padding-bottom:56px}}
+@media(max-width:520px){.plans{grid-template-columns:1fr}body{font-size:17px}header img{height:34px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://kinlybox.com/#org","name":"KinlyBox","legalName":"Vargas Plazas Family Co.","url":"https://kinlybox.com/","logo":"https://kinlybox.com/img/logo-moss.png","email":"hello@kinlybox.com","sameAs":["https://www.instagram.com/kinly_box/"],"slogan":"Close, even when you're far away.","founder":[{"@type":"Person","name":"Adriana"},{"@type":"Person","name":"Robinson"}]},
+{"@type":"WebSite","@id":"https://kinlybox.com/#site","url":"https://kinlybox.com/","name":"KinlyBox","publisher":{"@id":"https://kinlybox.com/#org"}},
+{"@type":"Product","name":"KinlyBox Classic Monthly Subscription Box","description":"A monthly gift box for parents and grandparents who live far away: three curated products, two snacks, and a personalized letter with a family photo. Shipping included in the US.","image":"https://kinlybox.com/img/box-classic.jpg","brand":{"@type":"Brand","name":"KinlyBox"},"offers":[
+{"@type":"Offer","name":"Thinking of You, 1 month","price":"46.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents"},
+{"@type":"Offer","name":"Close at Heart, 3 months","price":"140.97","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents"},
+{"@type":"Offer","name":"Always There, 6 months","price":"270.18","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents"},
+{"@type":"Offer","name":"Always Family, 12 months","price":"505.12","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents"}]},
+{"@type":"Product","name":"KinlyBox Premium Monthly Subscription Box","description":"Everything in the Classic box plus one extra personalized detail, such as a mug, a mini photo album or an engraved keychain. Shipping included in the US.","image":"https://kinlybox.com/img/box-premium.jpg","brand":{"@type":"Brand","name":"KinlyBox"},"offers":[
+{"@type":"Offer","name":"Premium, 1 month","price":"54.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents"},
+{"@type":"Offer","name":"Premium, 6 months","price":"315.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents"},
+{"@type":"Offer","name":"Premium, 12 months","price":"589.99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What's the difference between the Classic and Premium box?","acceptedAnswer":{"@type":"Answer","text":"Both include three curated products, two snacks, and a personalized letter with your family photo. Premium adds one more personalized detail, like a mug, a mini photo album or an engraved keychain, in a burgundy box. Classic is $46.99 per month and Premium is $54.99 per month."}},
+{"@type":"Question","name":"How does the personalized letter work?","acceptedAnswer":{"@type":"Answer","text":"After you order, you fill in a short form (about five minutes) with the message you want to write and a photo you love. We print them together on one page and place it inside the box."}},
+{"@type":"Question","name":"When do boxes ship?","acceptedAnswer":{"@type":"Answer","text":"Boxes ship once a month, around the 15th. Order by the 8th to be included in that month's box. Our first boxes ship December 17."}},
+{"@type":"Question","name":"Is shipping included?","acceptedAnswer":{"@type":"Answer","text":"Yes. Shipping within the United States is included in the price, so there is nothing extra to pay at checkout. We don't ship internationally yet."}},
+{"@type":"Question","name":"Can I send a box to a grandparent in a different city than mine?","acceptedAnswer":{"@type":"Answer","text":"Yes, that's exactly what KinlyBox is for. You enter your loved one's address, and the box goes straight to their door anywhere in the United States."}},
+{"@type":"Question","name":"What is KinlyBox Memories?","acceptedAnswer":{"@type":"Answer","text":"A yearly memory book that compiles every letter and photo from your boxes. It is included free with the Always Family 12-month plan and sold separately for $39.99."}},
+{"@type":"Question","name":"Who is behind KinlyBox?","acceptedAnswer":{"@type":"Answer","text":"We're Adriana and Robinson, siblings who live far from our own parents. KinlyBox is a real family helping other families stay close."}}
+]}
+]}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="/" aria-label="KinlyBox home"><img src="/img/logo-moss.png" alt="KinlyBox" width="143" height="42"></a>
+    <a class="btn ghost" href="#boxes">Choose your box</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="sig">With love, from far away</p>
+      <h1>A hug that fits in a <em>box.</em></h1>
+      <p class="eyebrow">A monthly gift box for parents and grandparents who live far away.</p>
+      <p class="lead">Every month: thoughtful gifts, snacks they'll enjoy, and a letter with your words and your family photo, printed on the same page. It feels like your mom's handwriting on an envelope.</p>
+      <a class="btn" href="#boxes">Choose your box</a>
+      <p class="note">Shipping included · United States only · Ships around the 15th each month</p>
+    </div>
+    <img class="photo" src="/img/hero.jpg" width="1080" height="1350" alt="Hands holding a kraft paper gift box tied with twine, over a handwritten letter and a family photo" fetchpriority="high">
+  </div>
+</section>
+
+<section class="kraft" id="how">
+  <img class="leaf" src="/img/leaves-moss.png" alt="" style="right:-40px;top:-30px;opacity:.35" width="360" height="172">
+  <div class="wrap">
+    <h2>How KinlyBox works</h2>
+    <div class="steps">
+      <div class="card"><div class="step-n">1</div><h3>Pick your box</h3><p>Classic or Premium, from a single month to a whole year. Add your loved one's address once and we take care of the rest.</p></div>
+      <div class="card"><div class="step-n">2</div><h3>Write your letter</h3><p>Fill in a short form with a photo you love and the words you'd say on the phone. It takes about five minutes.</p></div>
+      <div class="card"><div class="step-n">3</div><h3>We pack it with care</h3><p>We assemble it the way we'd pack one for our own parents, and it arrives at their door around the 15th.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="boxes">
+  <div class="wrap">
+    <h2>Two boxes, one letter</h2>
+    <p style="max-width:38em">Both boxes carry the same heart: a personalized letter with your photo printed on the same page. Premium adds one more detail made for them.</p>
+    <div class="boxes">
+      <article class="box">
+        <img src="/img/box-classic.jpg" width="1100" height="618" alt="KinlyBox Classic: a kraft paper box printed in moss green with leaf illustrations, shown closed and open with white tissue paper" loading="lazy">
+        <div class="body">
+          <span class="tag">Classic</span>
+          <h3>KinlyBox Classic</h3>
+          <div class="price">$46.99</div>
+          <div class="per">per month · shipping included</div>
+          <ul>
+            <li><strong>3 curated products</strong> for wellness, entertainment and comfort</li>
+            <li><strong>2 snacks</strong> to share over coffee or tea</li>
+            <li><strong>1 personalized letter</strong> with your family photo printed on the same page</li>
+            <li>Themed kraft packaging with twine and texture</li>
+          </ul>
+          <a class="btn" href="https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents">Choose Classic</a>
+        </div>
+      </article>
+      <article class="box prem">
+        <img src="/img/box-premium.jpg" width="1100" height="618" alt="KinlyBox Premium: a terracotta box with a gold label and Kinly the dog, shown closed and open with white tissue paper" loading="lazy">
+        <div class="body">
+          <span class="tag">Premium</span>
+          <h3>KinlyBox Premium</h3>
+          <div class="price">$54.99</div>
+          <div class="per">per month · 6 months $315.99 · 12 months $589.99 · shipping included</div>
+          <ul>
+            <li><strong>Everything in Classic</strong>: 3 products, 2 snacks and your personalized letter</li>
+            <li><strong>1 extra personalized detail</strong>, like a mug, a mini photo album or an engraved keychain</li>
+            <li>Burgundy gift box with a gold label</li>
+          </ul>
+          <a class="btn" href="https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents">Choose Premium</a>
+        </div>
+      </article>
+    </div>
+    <p class="premline">Looking for a birthday, Christmas, Mother's Day or Father's Day gift? Our <strong>Special Edition</strong> boxes are made for those occasions.</p>
+  </div>
+</section>
+
+<section id="gallery" class="kraft">
+  <div class="wrap">
+    <h2>A look inside</h2>
+    <div class="gallery">
+      <img src="/img/box-1.jpg" alt="Open KinlyBox gift box with a printed letter in the lid, red patterned socks and snack packs nested in red paper shred and white tissue." loading="lazy" onerror="this.remove();if(!document.querySelector('#gallery img'))document.getElementById('gallery').remove()">
+      <img src="/img/box-2.jpg" alt="Two hands holding a closed kraft paper KinlyBox with a green sprig logo on the lid, with red petals scattered on the surface below." loading="lazy" onerror="this.remove();if(!document.querySelector('#gallery img'))document.getElementById('gallery').remove()">
+      <img src="/img/box-3.jpg" alt="KinlyBox monthly gift box opened to show comfort items, pantry snacks and red patterned socks, with the letter printed inside the lid." loading="lazy" onerror="this.remove();if(!document.querySelector('#gallery img'))document.getElementById('gallery').remove()">
+      <img src="/img/box-4.jpg" alt="Front view of an open KinlyBox packed with snacks and cozy socks in red paper shred, with the personalized family letter on the lid." loading="lazy" onerror="this.remove();if(!document.querySelector('#gallery img'))document.getElementById('gallery').remove()">
+      <img src="/img/box-5.jpg" alt="Open KinlyBox with white tissue paper pulled aside to show colorful items and snack packages, and the personalized letter on the inner lid." loading="lazy" onerror="this.remove();if(!document.querySelector('#gallery img'))document.getElementById('gallery').remove()">
+      <img src="/img/box-6.jpg" alt="Angled view of an open KinlyBox with the letter lid raised, showing snack packages and holiday socks tucked into red paper shred." loading="lazy" onerror="this.remove();if(!document.querySelector('#gallery img'))document.getElementById('gallery').remove()">
+    </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="wrap">
+    <h2>Choose how long you'd like to stay close</h2>
+    <p style="max-width:38em">Pick how long you'd like to stay close, then choose the box that fits them best. Shipping is included in every plan.</p>
+    <div class="plans">
+      <div class="card plan kraft"><h3>Thinking of You</h3><div class="dur">1 month</div><p>A simple act of love. One carefully curated delivery that reminds someone special they are remembered, valued, and never far from your heart.</p><div class="acts"><a class="btn" href="https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents">Classic</a><a class="btn ghost" href="https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents">Premium</a></div></div>
+      <div class="card plan kraft"><h3>Close at Heart</h3><div class="dur">3 months</div><p>Three months of thoughtful surprises designed to turn distance into connection and ordinary days into meaningful moments.</p><div class="acts"><a class="btn" href="https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents">Classic</a><a class="btn ghost" href="https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents">Premium</a></div></div>
+      <div class="card plan kraft"><h3>Always There</h3><div class="dur">6 months</div><p>Six months of consistent care. A growing collection of shared memories that nurtures relationships and keeps loved ones feeling seen, appreciated, and connected.</p><div class="acts"><a class="btn" href="https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents">Classic</a><a class="btn ghost" href="https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents">Premium</a></div></div>
+      <div class="card plan kraft flag"><span class="badge">Our favorite</span><h3>Always Family</h3><div class="dur">12 months</div><p>Our signature experience. A year of thoughtful gifts, heartfelt letters, and treasured family photos, with the KinlyBox Memories book included.</p><div class="acts"><a class="btn" href="https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents">Classic</a><a class="btn ghost" href="https://www.cratejoy.com/products/kinlybox-premium-monthly-subscription-box-for-aging-parents-grandparents">Premium</a></div></div>
+    </div>
+    <p class="pricenote"><strong>How the price works:</strong> every plan is available with either box, and your monthly cost depends on the one you choose. Classic and Premium each have their own monthly price (you can see both in the boxes above), and our 6- and 12-month plans bring that monthly cost down a little. Tap Classic or Premium under any plan to see the exact total.</p>
+  </div>
+</section>
+
+<section id="story" class="kraft">
+  <div class="wrap story-wrap">
+    <div>
+      <h2>We live far away too.</h2>
+      <p>We're Adriana and Robinson, siblings, and like many families, we learned to hold the distance together with short calls, photos lost in a chat thread, and the quiet guilt of not being there for our parents' everyday moments.</p>
+      <p>One day we decided that "being far" didn't have to mean "being absent." In English, <em>kin</em> means family, your people. Kinly is, literally, us: two kin who built something so that no family has to choose between distance and closeness.</p>
+      <p>KinlyBox isn't a company that sells boxes. It's a family helping other families stay present, no matter how many miles lie between you.</p>
+      <p class="sig">With love, Adriana &amp; Robinson</p>
+    </div>
+    <img src="/img/kinly.png" width="350" height="400" alt="Kinly, the KinlyBox mascot: a small black and white dog in green overalls waving hello" loading="lazy">
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:800px">
+    <h2>Questions, answered plainly</h2>
+    <details><summary>What's the difference between the Classic and Premium box?</summary><p>Both include three curated products, two snacks, and a personalized letter with your family photo. Premium adds one more personalized detail, like a mug, a mini photo album or an engraved keychain, in a burgundy gift box. Classic is $46.99 a month and Premium is $54.99 a month.</p></details>
+    <details><summary>How does the personalized letter work?</summary><p>After you order, you fill in a short form (about five minutes) with your message and a photo you love. We print them together on one page and place it inside the box.</p></details>
+    <details><summary>When do boxes ship?</summary><p>Boxes ship once a month, around the 15th. Order by the 8th to be in that month's box. Our first boxes ship December 17.</p></details>
+    <details><summary>Is shipping included?</summary><p>Yes. Shipping within the United States is included in the price, so there's nothing extra to pay at checkout. We don't ship internationally yet.</p></details>
+    <details><summary>Can I send a box to a grandparent in another city?</summary><p>Yes, that's exactly what KinlyBox is for. You enter your loved one's address, and the box goes straight to their door anywhere in the United States.</p></details>
+    <details><summary>What is KinlyBox Memories?</summary><p>A yearly memory book that compiles every letter and photo from your boxes. It's included free with Always Family (12 months) and sold separately for $39.99.</p></details>
+    <details><summary>Who is behind KinlyBox?</summary><p>We're Adriana and Robinson, siblings who live far from our own parents. Write to us anytime at <a href="mailto:hello@kinlybox.com">hello@kinlybox.com</a>; we answer within 24 hours.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Close, even when you're far away.</h2>
+    <p style="margin-bottom:28px">A small box, a photo, and your words. That's all it takes.</p>
+    <a class="btn" href="#boxes">Choose your box</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="/img/logo-kraft.png" alt="KinlyBox" width="129" height="38">
+    <p>© 2026 Vargas Plazas Family Co. · <a href="mailto:hello@kinlybox.com">hello@kinlybox.com</a> · Shipping within the US only</p>
+    <p>Find us on Instagram <a href="https://www.instagram.com/kinly_box/">@kinly_box</a> · Shop on Cratejoy as <a href="https://www.cratejoy.com/products/kinlybox-classic-monthly-subscription-box-for-aging-parents-grandparents">kinlybox</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
